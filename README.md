@@ -4,8 +4,8 @@ SonarQube deployment on Kubernetes with Community Branch Plugin for multi-branch
 
 ## Versions
 
-- SonarQube: 25.4.0-community
-- Community Branch Plugin: 25.4.0
+- SonarQube: 25.9.0-community
+- Community Branch Plugin: 25.9.0
 - PostgreSQL: enabled
 
 ## Installation
