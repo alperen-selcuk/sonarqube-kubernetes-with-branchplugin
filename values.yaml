@@ -4,10 +4,10 @@ community:
 
 plugins:
   install:
-    - https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/25.4.0/sonarqube-community-branch-plugin-25.4.0.jar
+    - https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/25.9.0/sonarqube-community-branch-plugin-25.9.0.jar
 sonarProperties:
-  sonar.web.javaAdditionalOpts: "-javaagent:/opt/sonarqube/extensions/plugins/sonarqube-community-branch-plugin-25.4.0.jar=web"
-  sonar.ce.javaAdditionalOpts: "-javaagent:/opt/sonarqube/extensions/plugins/sonarqube-community-branch-plugin-25.4.0.jar=ce"
+  sonar.web.javaAdditionalOpts: "-javaagent:/opt/sonarqube/extensions/plugins/sonarqube-community-branch-plugin-25.9.0.jar=web"
+  sonar.ce.javaAdditionalOpts: "-javaagent:/opt/sonarqube/extensions/plugins/sonarqube-community-branch-plugin-25.9.0.jar=ce"
 
 extraVolumes:
   - name: webapp
@@ -25,7 +25,7 @@ extraInitContainers:
     command:
       - sh
       - -c
-      - wget -O /tmp/sonarqube-webapp.zip https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/25.4.0/sonarqube-webapp.zip &&
+      - wget -O /tmp/sonarqube-webapp.zip https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/25.9.0/sonarqube-webapp.zip &&
         unzip -o /tmp/sonarqube-webapp.zip -d /web &&
         chmod -R 755 /web &&
         chown -R 1000:0 /web &&
@@ -45,7 +45,7 @@ OpenShift:
 
 image:
   repository: sonarqube
-  tag: 25.4.0.105899-community
+  tag: 25.9.0.112764-community
 
 
 monitoringPasscode: S1029*onarqube
