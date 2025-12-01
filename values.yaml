@@ -48,7 +48,7 @@ image:
   tag: 25.9.0.112764-community
 
 
-monitoringPasscode: S1029*onarqube
+monitoringPasscode: RandomPassword123*
 
 readinessProbe:
   initialDelaySeconds: 60
@@ -117,7 +117,7 @@ postgresql:
   enabled: true
   
   postgresqlUsername:  sonarqube
-  postgresqlPassword: S1029*onarqube
+  postgresqlPassword: RandomPassword123*
   postgresqlDatabase: sonarqube
   service:
     port: 5432
